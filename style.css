@@ -37,7 +37,7 @@ main {
 nav {
   display: flex;
   flex-wrap: wrap;
-  width: 965px;
+  width: 985px;
   margin: 0 auto;
   padding: 0;
   justify-content: center;
@@ -45,10 +45,16 @@ nav {
   position: relative;
 }
 
-nav * {
+/* nav * {
   padding: 5px;
-}
+} */
 
+/* * {
+  border: 1px solid green;
+} */
+[alt="Apple"] {
+  height: 25px;
+}
 ul {
   list-style-type: none;
   display: flex;
@@ -59,7 +65,9 @@ ul {
 
 header nav ul li {
   border: 1px solid #808080;
-  height: 26px;
+  line-height: 25px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   background-image: linear-gradient(#666, #5e5e5e, #707070, #808080);
   width: 85px;
   justify-content: center;
@@ -75,15 +83,17 @@ ul li:first-child {
   height: 13px;
   width: 14px;
   position: relative;
-  left: 0;
-  top: 0;
+  left: 1px;
+  top: 8px;
   padding: 0;
 }
 
 input {
   width: 100px;
   position: relative;
-  height: auto;
+  height: 15px;
+  margin-top: 5px;
+  margin-left: 3px;
   background-image: linear-gradient(#666, #5e5e5e, #707070, #808080);
   border-style: none;
   background-color: transparent;
@@ -105,6 +115,7 @@ li a img {
 
 header nav li a:hover {
   background-color: black;
+  background-image: none;
   text-decoration: none;
 }
 
@@ -123,7 +134,7 @@ header nav ul li:hover {
   display: flex;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
-  height: 26px;
+  height: 31px;
   position: relative;
   background-image: linear-gradient(#666, #5e5e5e, #707070, #808080);
   border: 1px solid #808080;
@@ -132,6 +143,7 @@ header nav ul li:hover {
 .inside {
   display: flex;
   position: relative;
+  width: 145px;
   border-radius: 20px;
   border: 1px solid #808080;
 }
